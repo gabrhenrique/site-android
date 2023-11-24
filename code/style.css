@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
   font-family: idroid;
   src: url(../assets/fonts/idroid.otf);
@@ -7,4 +8,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.color {
+  color: green;
+  font-weight: bold;
 }
