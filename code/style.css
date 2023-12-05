@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
 @font-face {
   font-family: idroid;
   src: url(../assets/fonts/idroid.otf);
 }
+
+:root {
+  --green1: #45e48d;
+  --green2: #227648;
+  --green3: #84E1AD;
+  --green4: #1A5C38;
+  --white: #fff;
+  --black: #000;
+}
+
 
 * {
   margin: 0;
@@ -10,7 +21,86 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--green3);
+}
+
 .color {
-  color: green;
+  color: var(--green2);
   font-weight: bold;
+}
+
+header {
+  background: linear-gradient(to bottom, var(--green1), var(--green2));
+  color: var(--white);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-family: 'Share Tech', sans-serif;
+}
+
+.title p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 25%;
+  margin-top: 20px;
+}
+
+.navigation {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+
+
+.navigation ul li {
+  padding: 10px 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.navigation ul li a:hover {
+  transition: .3s;
+  color: var(--green2);
+  background-color: var(--green1);
+  padding: 10px 8px;
+  border-radius: 3px;
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 20px;
+  text-align: justify;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+footer {
+  background-color: var(--green4);
+  color: var(--white);
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
 }
