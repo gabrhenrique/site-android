@@ -147,10 +147,20 @@ main img {
   margin: 0 -20px;
 }
 
-.video div {
+.video {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 56.5%;
+  position: relative;
+}
+
+.video iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
 }
 
 .aside {
