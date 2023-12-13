@@ -60,27 +60,31 @@ header {
   margin-top: 20px;
 }
 
-.navigation {
+#navigation {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navigation ul {
+#btn-mobile {
+  display: none;
+}
+
+#navigation ul {
   display: flex;
   list-style: none;
 }
 
-.navigation ul li {
+#navigation ul li {
   padding: 10px 10px;
 }
 
-.navigation ul li a {
+#navigation ul li a {
   text-decoration: none;
   color: var(--white);
   font-weight: bold;
   padding: 10px 8px;
 }
 
-.navigation ul li a:hover {
+#navigation ul li a:hover {
   transition: .3s;
   color: var(--green2);
   background-color: var(--green1);
@@ -89,7 +93,7 @@ header {
 }
 
 main {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   background-color: var(--white);
   padding: 20px;
@@ -200,7 +204,7 @@ footer {
 
 @media (max-width: 1035px) {
   main {
-    width: 90%;
+    width: 80%;
   }
 
   .title p {
@@ -216,6 +220,11 @@ footer {
   main img {
     display: none;
     width: 400px;
+  }
+
+  #navigation ul {
+    display: flex;
+    justify-content: center;
   }
 
   .bugdroid {
@@ -247,19 +256,66 @@ footer {
 }
 
 @media (max-width: 490px) {
-  .navigation ul {
+  .title {
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .title p {
     display: none;
+  }
+
+  #navigation.active #menu {
+    display: block;
+    visibility: visible;
+    overflow-y: auto;
+    height: 26vh;
+  }
+
+  #btn-mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 23px 20px;
+  }
+
+  #menu {
+    background-color: var(--green2);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    height: 0px;
+  }
+
+  #navgation ul {
+    visibility: hidden;
   }
 }
 
 
 @media (max-width: 414px) {
   .title h1 {
+    width: 60%;
     text-align: center;
   }
 
   .title p {
     min-width: 100%;
+  }
+
+  #btn-mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 35px 20px;
   }
 
   main img {
