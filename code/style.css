@@ -269,10 +269,12 @@ footer {
   }
 
   #navigation.active #menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
     visibility: visible;
     overflow-y: auto;
     height: 26vh;
+    color: var(--green2);
   }
 
   #btn-mobile {
@@ -280,7 +282,7 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
-    margin: 23px 20px;
+    margin: 21px 20px;
   }
 
   #menu {
@@ -294,8 +296,8 @@ footer {
     height: 0px;
   }
 
-  #navgation ul {
-    visibility: hidden;
+  #navigation ul li{
+    visibility: visible;
   }
 }
 
@@ -315,7 +317,7 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
-    margin: 35px 20px;
+    margin: 32px 20px;
   }
 
   main img {
