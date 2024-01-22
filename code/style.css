@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
   font-family: idroid;
@@ -16,6 +16,10 @@
   --white: #fff;
   --black: #000;
   --soft-black: #0000009f;
+
+  --font-default: Arial, Helvetica, sans-serif;
+  --font-title: "Bebas Neue", sans-serif;
+  --font-android: "idroid";
 }
 
 
@@ -27,7 +31,7 @@
 
 body {
   background-color: var(--green3);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-default);
   color: var(--soft-black);
 }
 
@@ -51,7 +55,7 @@ header {
 
 .title h1 {
   text-transform: uppercase;
-  font-family: 'Share Tech', sans-serif;
+  font-family: var(--font-title)
 }
 
 .title p {
@@ -61,7 +65,7 @@ header {
 }
 
 #navigation {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-default);
 }
 
 #btn-mobile {
@@ -104,7 +108,7 @@ main {
 }
 
 main h1 {
-  font-family: idroid;
+  font-family: var(--font-android);
   color: var(--green2);
   font-size: 25px;
 }
@@ -116,7 +120,7 @@ main p {
 }
 
 main h2 {
-  font-family: idroid;
+  font-family: var(--font-android);
   color: var(--green2);
   background: linear-gradient(to right, var(--green5), var(--white));
   text-indent: 10px;
